@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DIYSabers</title>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/animate.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        #navbar {
+            background-color: #EF6C00;
+        }
+
+        .brand-logo {
+            margin-left: 15px;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: #E2E2E2;
+        }
+
+        .wrapper {
+            margin: 0 auto;
+        }
+
+        .small-divider {
+            height: 10px;
+        }
+
+        .medium-divider {
+            height: 30px;
+        }
+
+        .large-divider {
+            height: 50px;
+        }
+
+        .collapsible {
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="dropdown1" class="dropdown-content">
+        <li>
+            <a href="#!">one</a>
+        </li>
+        <li>
+            <a href="#!">two</a>
+        </li>
+        <li class="divider"></li>
+        <li>
+            <a href="#!">three</a>
+        </li>
+    </ul>
+    <nav id="navbar" class="hoverable animated fadeInDown">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">DIYSabers</a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="badges.html">Components</a>
+                </li>
+                <!-- Dropdown Trigger -->
+                <li>
+                    <a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown
+                        <i class="material-icons right">arrow_drop_down</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <ul class="collapsible expandable popout animated bounceInUp">
+            <li>
+                <div class="collapsible-header">Emmiters</div>
+                <div class="collapsible-body">
+                    <div class="row">
+                        <div class="col s4">
+                            <div class="card hoverable">
+                                <div class="card-content">
+                                    <span class="card-title">Card Title</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
+                                        because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">View Component</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card hoverable">
+                                <div class="card-content">
+                                    <span class="card-title">Card Title</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
+                                        because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">View Component</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card hoverable">
+                                <div class="card-content">
+                                    <span class="card-title">Card Title</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
+                                        because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">View Component</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s4">
+                            <div class="card hoverable">
+                                <div class="card-content">
+                                    <span class="card-title">Card Title</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
+                                        because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">View Component</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card hoverable">
+                                <div class="card-content">
+                                    <span class="card-title">Card Title</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
+                                        because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">View Component</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card hoverable">
+                                <div class="card-content">
+                                    <span class="card-title">Card Title</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
+                                        because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">View Component</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">Couplers</div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">Tangs</div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+            </li>
+        </ul>
+
+
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".dropdown-trigger").dropdown();
+            var elem = document.querySelector('.collapsible.expandable');
+            var instance = M.Collapsible.init(elem, {
+                accordion: false
+            });
+        });
+    </script>
+</body>
+
+</html>

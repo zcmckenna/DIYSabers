@@ -26,14 +26,21 @@
         .wrapper {
             margin: 0 auto;
         }
+
         .small-divider {
             height: 10px;
         }
+
         .medium-divider {
             height: 30px;
         }
+
         .large-divider {
             height: 50px;
+        }
+
+        #about {
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -56,27 +63,44 @@
             <a href="index.html" class="brand-logo">DIYSabers</a>
             <ul class="right hide-on-med-and-down">
                 <li>
-                    <a href="about.html">About</a>
+                    <a href="index.html">Home</a>
                 </li>
+
                 <li>
                     <a href="components.html">Components</a>
                 </li>
-                <!-- Dropdown Trigger -->
                 <li>
-                    <a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown
-                        <i class="material-icons right">arrow_drop_down</i>
-                    </a>
+                    <a href="about.html">About</a>
                 </li>
             </ul>
         </div>
     </nav>
-
+    <div class="wrapper">
+        <div class="row" id="about">
+            <div class="col s2"></div>
+            <div class="col s8">
+                <div class="card hoverable animated bounceInUp">
+                    <div class="card-content">
+                        <span class="card-title" style="font-family: 'Roboto', sans-serif;font-weight: 300;font-size: 50px;">About</span>
+                        <div class="medium-divider"></div>
+                        <p style="font-family: 'Roboto', sans-serif;font-weight:100;font-size: 30px;">All of DIYSabers parts were designed to fit around a piece of 1" PVC pipe. This allows endless customizability
+                            and allows you, the user, to make the saber of your dreams. All you have to do is browse our
+                            catalogue of free 3D part files, choose the ones you like, and then download them. From there
+                            you can print your files in whatever colors you would like, or paint them, and then assemble
+                            your saber... It's as simple as that. Make sure to check back regularly for our ever growing
+                            inventory of parts. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s2"></div>
+        </div>
     </div>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
         $(document).ready(function () {
             $(".dropdown-trigger").dropdown();
+            $('.tabs').tabs();
         });
     </script>
 </body>

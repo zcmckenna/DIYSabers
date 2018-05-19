@@ -46,6 +46,9 @@
         .large-divider {
             height: 50px;
         }
+        .fixed-action-btn .btn-floating {
+            background-color: #00bcd4;
+        }
     </style>
 </head>
 
@@ -57,19 +60,26 @@
                 <li>
                     <a href="index.html">Home</a>
                 </li>
-
+                <li>
+                    <a href="about.html">About</a>
+                </li>
                 <li>
                     <a href="components.html">Components</a>
                 </li>
+                
                 <li>
-                    <a href="about.html">About</a>
+                    <a href="getting-started.html">Getting Started</a>
                 </li>
             </ul>
         </div>
     </nav>
     <div class="wrapper">
         <div class="row" id="welcome">
-            <div class="col s2"></div>
+            <div class="col s2">
+                <div class="spinner-wrapper">
+                    <div class="spinner"></div>
+                </div>
+            </div>
             <div class="col s8">
                 <div class="card hoverable animated bounceInUp">
                     <div class="card-content">
@@ -84,11 +94,17 @@
             <div class="col s2"></div>
         </div>
     </div>
+    <div class="fixed-action-btn">
+        <a href="about.html" class="btn-floating btn-large waves-effect">
+            <i class="large material-icons">chevron_right</i>
+        </a>
+    </div>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
         $(document).ready(function () {
             $(".dropdown-trigger").dropdown();
+            $('.fixed-action-btn').floatingActionButton();
         });
     </script>
 </body>

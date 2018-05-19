@@ -5351,6 +5351,15 @@ button.btn-floating {
   z-index: 997;
 }
 
+.fixed-action-btn2 {
+  position: fixed;
+  right: 23px;
+  bottom: 23px;
+  padding-top: 15px;
+  margin-bottom: 0;
+  z-index: 997;
+}
+
 .fixed-action-btn.active ul {
   visibility: visible;
 }

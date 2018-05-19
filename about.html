@@ -3,7 +3,7 @@
 
 <head>
     <title>DIYSabers</title>
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="css/animate.min.css" media="screen,projection" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -42,6 +42,12 @@
         #about {
             margin-top: 50px;
         }
+        .fixed-action-btn .btn-floating {
+            background-color: #00bcd4;
+        }
+        .fixed-action-btn2 .btn-floating {
+            background-color: #00bcd4;
+        }
     </style>
 </head>
 
@@ -65,12 +71,14 @@
                 <li>
                     <a href="index.html">Home</a>
                 </li>
-
+                <li>
+                    <a href="about.html">About</a>
+                </li>
                 <li>
                     <a href="components.html">Components</a>
                 </li>
                 <li>
-                    <a href="about.html">About</a>
+                    <a href="getting_started.html">Getting Started</a>
                 </li>
             </ul>
         </div>
@@ -85,8 +93,8 @@
                         <div class="medium-divider"></div>
                         <p style="font-family: 'Roboto', sans-serif;font-weight:100;font-size: 30px;">All of DIYSabers parts were designed to fit around a piece of 1" PVC pipe. This allows endless customizability
                             and allows you, the user, to make the saber of your dreams. All you have to do is browse our
-                            catalogue of free 3D part files, choose the ones you like, and then download them. From there
-                            you can print your files in whatever colors you would like, or paint them, and then assemble
+                            catalogue of free 3D part files and choose the ones you like, then download them. From there
+                            you can print your files in whatever colors or materials you would like, or paint them, and then assemble
                             your saber... It's as simple as that. Make sure to check back regularly for our ever growing
                             inventory of parts. </p>
                     </div>
@@ -95,12 +103,21 @@
             <div class="col s2"></div>
         </div>
     </div>
+    <div class="fixed-action-btn" style="bottom:0px;left:0px;width:100%">
+        <a href="index.html" class="btn-floating btn-large waves-effect" style="left:23px;bottom:23px;">
+            <i class="large material-icons">chevron_left</i>
+        </a>
+        <a href="components.html" class="btn-floating btn-large waves-effect" style="position:absolute;right:23px;bottom:23px;">
+            <i class="large material-icons">chevron_right</i>
+        </a>
+    </div>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
         $(document).ready(function () {
             $(".dropdown-trigger").dropdown();
             $('.tabs').tabs();
+            $('.fixed-action-btn').floatingActionButton();
         });
     </script>
 </body>

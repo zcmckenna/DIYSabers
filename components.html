@@ -42,10 +42,23 @@
         .collapsible {
             margin: 50px;
         }
+
+        .hameid-loader-overlay {
+            width: 100%;
+            height: 100%;
+            background: url('images/preloader.gif') center no-repeat #FFF;
+            z-index: 99999;
+            position: fixed;
+        }
+
+        .fixed-action-btn .btn-floating {
+            background-color: #00bcd4;
+        }
     </style>
 </head>
 
 <body>
+    <div class="hameid-loader-overlay"></div>
     <nav id="navbar" class="hoverable animated fadeInDown">
         <div class="nav-wrapper">
             <a href="index.html" class="brand-logo">DIYSabers</a>
@@ -53,18 +66,22 @@
                 <li>
                     <a href="index.html">Home</a>
                 </li>
-
+                <li>
+                    <a href="about.html">About</a>
+                </li>
                 <li>
                     <a href="components.html">Components</a>
                 </li>
+
                 <li>
-                    <a href="about.html">About</a>
+                    <a href="getting_started.html">Getting Started</a>
                 </li>
             </ul>
         </div>
     </nav>
     <div class="wrapper">
         <ul class="collapsible expandable popout animated bounceInUp">
+            <!-- Emmiters -->
             <li>
                 <div class="collapsible-header" style="font-family: 'Roboto', sans-serif;font-weight: 100;font-size: 40px;">Emmiters</div>
                 <div class="collapsible-body">
@@ -77,15 +94,14 @@
                                     <div className='modelo-wrapper'>
                                         <div style="width: 100%; padding-bottom: 56.25%; position: relative">
                                             <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
-                                                <iframe src="https://app.modelo.io/embedded/LyVvasgroO?viewport=false&autoplay=false"
-                                                    style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen
-                                                    allowfullscreen></iframe>
+                                                <iframe src="https://app.modelo.io/embedded/LyVvasgroO?viewport=false&autoplay=false" style="width:100%;height:100%;" frameborder="0"
+                                                    mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-action">
-                                        <a href="/components/coupler1.STL" download>Download</a>
+                                    <a href="/components/coupler1.STL" download>Download</a>
                                 </div>
                             </div>
                         </div>
@@ -93,6 +109,7 @@
                     </div>
                 </div>
             </li>
+            <!-- Couplers -->
             <li>
                 <div class="collapsible-header" style="font-family: 'Roboto', sans-serif;font-weight: 100;font-size: 40px;">Couplers</div>
                 <div class="collapsible-body">
@@ -105,15 +122,14 @@
                                     <div className='modelo-wrapper'>
                                         <div style="width: 100%; padding-bottom: 56.25%; position: relative">
                                             <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
-                                                <iframe src="https://app.modelo.io/embedded/sU765QKj9M?viewport=false&autoplay=false"
-                                                    style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen
-                                                    allowfullscreen></iframe>
+                                                <iframe src="https://app.modelo.io/embedded/sU765QKj9M?viewport=false&autoplay=false" style="width:100%;height:100%;" frameborder="0"
+                                                    mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">View Component</a>
+                                    <a href="/components/SmallCoupler.STL" download>Download</a>
                                 </div>
                             </div>
                         </div>
@@ -124,21 +140,21 @@
                                     <div className='modelo-wrapper'>
                                         <div style="width: 100%; padding-bottom: 56.25%; position: relative">
                                             <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
-                                                <iframe src="https://app.modelo.io/embedded/6PJMYJ8_ju?viewport=false&autoplay=false"
-                                                    style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen
-                                                    allowfullscreen></iframe>
+                                                <iframe src="https://app.modelo.io/embedded/6PJMYJ8_ju?viewport=false&autoplay=false" style="width:100%;height:100%;" frameborder="0"
+                                                    mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">View Component</a>
+                                    <a href="/components/MediumCoupler.STL" download>Download</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col s2"></div>
                     </div>
             </li>
+            <!-- Tangs -->
             <li>
                 <div class="collapsible-header" style="font-family: 'Roboto', sans-serif;font-weight: 100;font-size: 40px;">Tangs</div>
                 <div class="collapsible-body">
@@ -151,9 +167,8 @@
                                     <div className='modelo-wrapper'>
                                         <div style="width: 100%; padding-bottom: 56.25%; position: relative">
                                             <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
-                                                <iframe src="https://app.modelo.io/embedded/GWBaP2Vhd6?viewport=false&autoplay=false"
-                                                    style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen
-                                                    allowfullscreen></iframe>
+                                                <iframe src="https://app.modelo.io/embedded/GWBaP2Vhd6?viewport=false&autoplay=false" style="width:100%;height:100%;" frameborder="0"
+                                                    mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe>
                                             </div>
                                         </div>
                                     </div>
@@ -167,6 +182,7 @@
                     </div>
                 </div>
             </li>
+            <!-- Grips -->
             <li>
                 <div class="collapsible-header" style="font-family: 'Roboto', sans-serif;font-weight: 100;font-size: 40px;">Grips</div>
                 <div class="collapsible-body">
@@ -179,15 +195,14 @@
                                     <div className='modelo-wrapper'>
                                         <div style="width: 100%; padding-bottom: 56.25%; position: relative">
                                             <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
-                                                <iframe src="https://app.modelo.io/embedded/zNLkP3JppY?viewport=false&autoplay=false"
-                                                    style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen
-                                                    allowfullscreen></iframe>
+                                                <iframe src="https://app.modelo.io/embedded/zNLkP3JppY?viewport=false&autoplay=false" style="width:100%;height:100%;" frameborder="0"
+                                                    mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">View Component</a>
+                                    <a href="/components/2PieceGripBody.STL" download>Download</a>
                                 </div>
                             </div>
                         </div>
@@ -198,15 +213,14 @@
                                     <div className='modelo-wrapper'>
                                         <div style="width: 100%; padding-bottom: 56.25%; position: relative">
                                             <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
-                                                <iframe src="https://app.modelo.io/embedded/0HGhBFqqt2?viewport=false&autoplay=false"
-                                                    style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen
-                                                    allowfullscreen></iframe>
+                                                <iframe src="https://app.modelo.io/embedded/0HGhBFqqt2?viewport=false&autoplay=false" style="width:100%;height:100%;" frameborder="0"
+                                                    mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">View Component</a>
+                                    <a href="/components/2PieceGripInsert.STL" download>Download</a>
                                 </div>
                             </div>
                         </div>
@@ -216,17 +230,33 @@
                 </div>
             </li>
         </ul>
-
-
+        </div>
+        <div class="fixed-action-btn" style="bottom:0px;left:0px;width:100%">
+            <a href="about.html" class="btn-floating btn-large waves-effect" style="left:23px;bottom:23px;">
+                <i class="large material-icons">chevron_left</i>
+            </a>
+            <a href="getting-started.html" class="btn-floating btn-large waves-effect" style="position:absolute;right:23px;bottom:23px;">
+                <i class="large material-icons">chevron_right</i>
+            </a>
         </div>
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script>
             $(document).ready(function () {
+                jQuery(".hameid-loader-overlay").fadeOut(500);
                 $(".dropdown-trigger").dropdown();
                 var elem = document.querySelector('.collapsible.expandable');
                 var instance = M.Collapsible.init(elem, {
-                    accordion: false
+                    accordion: true
+                });
+                $('.fixed-action-btn').floatingActionButton();
+                $("#reload").click(function () {
+                    jQuery.each($("iframe"), function () {
+                        $(this).attr({
+                            src: $(this).attr("src")
+                        });
+                    });
+                    return false;
                 });
             });
         </script>

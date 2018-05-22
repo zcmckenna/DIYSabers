@@ -3,7 +3,7 @@
 
 <head>
     <title>DIYSabers</title>
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="css/animate.min.css" media="screen,projection" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -27,14 +27,6 @@
             margin: 0 auto;
         }
 
-        #welcome {
-            margin-top: 50px;
-        }
-
-        .card {
-            color: black;
-        }
-
         .small-divider {
             height: 10px;
         }
@@ -46,7 +38,16 @@
         .large-divider {
             height: 50px;
         }
+
+        #about {
+            margin-top: 50px;
+        }
+
         .fixed-action-btn .btn-floating {
+            background-color: #00bcd4;
+        }
+
+        .fixed-action-btn2 .btn-floating {
             background-color: #00bcd4;
         }
     </style>
@@ -57,7 +58,7 @@
         <div class="nav-wrapper">
             <a href="index.html" class="brand-logo">DIYSabers</a>
             <ul class="right hide-on-med-and-down">
-                <li class="active">
+                <li>
                     <a href="index.html">Home</a>
                 </li>
                 <li>
@@ -66,37 +67,34 @@
                 <li>
                     <a href="components.html">Components</a>
                 </li>
-                
-                <li>
-                    <a href="getting-started.html">Getting Started</a>
+                <li class="active">
+                    <a href="getting_started.html">Getting Started</a>
                 </li>
             </ul>
         </div>
     </nav>
     <div class="wrapper">
-        <div class="row" id="welcome">
-            <div class="col s2">
-                <div class="spinner-wrapper">
-                    <div class="spinner"></div>
-                </div>
-            </div>
+        <div class="row" id="about">
+            <div class="col s2"></div>
             <div class="col s8">
                 <div class="card hoverable animated bounceInUp">
                     <div class="card-content">
-                        <span class="card-title" style="font-family: 'Roboto', sans-serif;font-weight: 300;font-size: 50px;">Welcome to DIYSabers!</span>
+                        <span class="card-title" style="font-family: 'Roboto', sans-serif;font-weight: 300;font-size: 50px;">Getting Started</span>
                         <div class="medium-divider"></div>
-                        <p style="font-family: 'Roboto', sans-serif;font-weight:100;font-size: 30px;">DIYSabers was started to provide anyone and everyone with a one stop source for any 3D printed DIY
-                            lightsaber projects. We provide a simple platform to download, print, and assemble your very
-                            own custom designed lightsaber.</p>
+                        <p style="font-family: 'Roboto', sans-serif;font-weight:100;font-size: 30px;">Before you can complete your saber you will need to do a few more things. First off, you will need
+                            a blade for your new saber. We recommend the blade found
+                            <a href="https://saberforge.com/collections/blades/products/blade">here</a> as it is the blade we designed the emitters for. Also to add sound we recommend
+                            <a href="https://www.arduino.cc">Arduino.cc</a> because it is open source and easy to customize. Other than that, just get a piece
+                            od 1" ID PVC pipe and start building!</p>
                     </div>
                 </div>
             </div>
             <div class="col s2"></div>
         </div>
     </div>
-    <div class="fixed-action-btn">
-        <a href="about.html" class="btn-floating btn-large waves-effect">
-            <i class="large material-icons">chevron_right</i>
+    <div class="fixed-action-btn" style="bottom:0px;left:0px;width:100%">
+        <a href="components.html" class="btn-floating btn-large waves-effect" style="left:23px;bottom:23px;">
+            <i class="large material-icons">chevron_left</i>
         </a>
     </div>
     <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -104,6 +102,7 @@
     <script>
         $(document).ready(function () {
             $(".dropdown-trigger").dropdown();
+            $('.tabs').tabs();
             $('.fixed-action-btn').floatingActionButton();
         });
     </script>
